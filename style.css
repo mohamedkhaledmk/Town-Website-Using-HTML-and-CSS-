@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.townBackground {
+  background: url(./images/town.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.upper {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+  padding: 1%;
+  font-size: 1.5em;
+  font-family: cursive;
+  font-weight: 700;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+li {
+  cursor: pointer;
+}
+li:hover {
+  color: #4169e1;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.theTown {
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.middleText {
+  font-size: 1.3rem;
+}
+.whiteBackground {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1% 0%;
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.introductionSection h1 {
+  font-size: 3rem;
+  color: #4169e1;
+  margin-bottom: 1rem;
+}
+.introductionSection p {
+  font-size: 1.3rem;
+  width: 75%;
+  line-height: 1.7;
+  color: #777;
+}
+.introductionSection .btn {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 0.7rem;
+  margin-top: 22px;
+  cursor: pointer;
+  padding: 0.5rem 10px;
+  font-weight: 400;
+  font-size: 16px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.introductionSection .btn:hover {
+  background-color: #4169e1;
+}
+.whiteBackground .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.gradientSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: linear-gradient(180deg, #e3987f, #5c648c);
+}
+.gradientSection .firstSection,
+.secondSection,
+.thirdSection {
+  flex-basis: 20%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+.gradientSection h1 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+.gradientSection a {
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.gradientSection a:hover {
+  color: #4169e1;
+}
+.gradientSection p {
+  color: #cdc1c1;
+}
+.workImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+.ourWork h1 {
+  color: #4169e1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.ourWork p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 2.5rem;
+  margin-top: 0.5rem;
+  line-height: 1.4;
+}
+.workImages img {
+  height: 225px;
+  width: 200px;
+  margin: 5px;
+}
+.workImages img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.footer-section {
+  background-image: url(/images/Townfooter.jpg);
+  background-position-x: 100%;
+  background-position-y: 45%;
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.footer-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.footer-section .container .contact-top {
+  width: 80%;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+.footer-section .contact-top h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.footer-section .contact-top span::after {
+  background-color: #fff;
+  content: "";
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20%;
+}
+.footer-section .contact-top span {
+  background-color: #fff;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.footer-section .contact-middle,
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+}
+
+.footer-section .contact-middle p {
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 4rem;
+}
+.footer-section .contact-middle .mail-subscribe input {
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  padding: 0.5rem 10px;
+  font-weight: 400;
+  background-color: transparent;
+  color: white;
+  margin-right: 1rem;
+}
+.footer-section .contact-middle .mail-subscribe input::placeholder {
+  color: white;
+  margin: 1rem 0 1rem 0;
+}
+.footer-section .contact-middle .mail-subscribe button {
+  border-radius: 0.3rem;
+  background-color: white;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  padding: 0.5rem 0.7rem;
+  font-weight: 400;
+  color: #4169e1;
+  margin-right: 1rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  .whiteBackground {
+    flex-direction: column;
+  }
+  .introductionSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    width: 100%;
+  }
+  .upper-right {
+    display: none;
+  }
+  .gradientSection {
+    flex-direction: column;
+  }
+  .gradientSection .firstSection,
+  .secondSection,
+  .thirdSection {
+    width: 70%;
+  }
+}
